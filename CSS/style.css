@@ -78,7 +78,7 @@ a:hover {
 }
 
 .parallaxed2 {
-  background: url("/Images/BG5.jpg") no-repeat fixed center;
+  background: url("../Images/BG5.jpg") no-repeat fixed center;
   background-size: cover;
   height: 50vh;
 }
@@ -88,7 +88,7 @@ a:hover {
   height: 90vh;
 }
 .parallaxed3 .parallax-img {
-  background: url("/Images/BG4.jpg") no-repeat center;
+  background: url("../Images/BG4.jpg") no-repeat center;
   background-size: cover;
   height: 110% !important;
   width: 130% !important;
@@ -215,7 +215,7 @@ a:hover {
   align-items: center;
   justify-content: center;
   padding: 5em;
-  background: url("/Images/BG3.jpg") no-repeat center;
+  background: url("../Images/BG3.jpg") no-repeat center;
   background-size: cover;
   grid-area: hero;
 }
