@@ -1,0 +1,42 @@
+.mosaic
+  img
+    margin-top: 1em
+    width: 60%
+  margin-top: 5em
+  //height: 90vh
+  display: grid
+  grid-template-columns: 2fr 1fr
+  grid-template-areas: "hero aside-top" "hero aside-bottom"
+  .hero
+    text-align: center
+    color: white
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    padding: 5em
+    background: url("/Images/BG3.jpg") no-repeat center
+    background-size: cover
+    grid-area: hero
+    .hero-title
+      font-size: 2.5em
+  .aside-top
+    padding: 2em
+    display: flex
+    flex-direction: column
+    align-items: center
+    text-align: center
+    grid-area: aside-top
+  .aside-bottom
+    color: white
+    padding: 2em
+    display: flex
+    flex-direction: column
+    align-items: center
+    text-align: center
+    background: $color2
+    grid-area: aside-bottom
+
+@media screen and (max-width: 1000px)
+  .mosaic
+    display: block

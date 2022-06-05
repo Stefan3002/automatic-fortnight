@@ -1,0 +1,31 @@
+.cards
+  margin-top: 2em
+  padding: 2em
+  display: flex
+  justify-content: center
+  align-items: center
+  .card
+    box-shadow: 4px 4px 30px black
+    transition: all .3s
+    &:hover
+      box-shadow: 0 0 0 black
+      transition: all .2s
+    img
+      padding: 1em
+      height: 60%
+      width: 60%
+      margin-bottom: 1.5em
+    color: white
+    text-align: center
+    margin: 1em 2em
+    border-radius: 10px
+    //padding: 1em
+    background: $color1
+    .card-text
+      background: $color2
+      padding: 1.5em
+      border-radius: 0 0 10px 10px
+
+@media screen and (max-width: 1100px)
+  .cards
+    flex-direction: column
