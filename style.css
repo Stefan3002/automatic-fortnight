@@ -1,0 +1,368 @@
+footer {
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .attributions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation-wrapper {
+  width: calc(100% - 0.5em);
+  background: white;
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  padding: 0.5em;
+}
+.navigation-wrapper .navigation {
+  display: flex;
+  justify-content: space-between;
+}
+.navigation-wrapper .navigation ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+.navigation-wrapper .navigation ul li {
+  margin: 0 1em;
+}
+
+.logo {
+  font-size: 1.3em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  opacity: 1;
+  transition: all 0.2s;
+}
+a:hover {
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+
+.head-text {
+  font-family: "Righteous", cursive;
+}
+
+.highlighted {
+  color: #69b3ef;
+}
+
+.swiper-pagination {
+  bottom: 0 !important;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.title-p {
+  font-size: 3em;
+}
+
+.parallaxed1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("Images/BG2.jpg") no-repeat fixed center;
+  background-size: cover;
+}
+.parallaxed1 .title {
+  font-size: 3em;
+  color: white;
+}
+
+.parallaxed2 {
+  background: url("/Images/BG5.jpg") no-repeat fixed center;
+  background-size: cover;
+  height: 50vh;
+}
+
+.parallaxed3 {
+  overflow: hidden;
+  height: 90vh;
+}
+.parallaxed3 .parallax-img {
+  background: url("/Images/BG4.jpg") no-repeat center;
+  background-size: cover;
+  height: 110% !important;
+  width: 130% !important;
+  position: absolute;
+  left: -100px !important;
+}
+.parallaxed3 .parallax-text {
+  color: white;
+  font-size: 2em;
+  position: absolute;
+  left: 34% !important;
+  top: 35% !important;
+}
+
+.planets-choice {
+  margin: 2em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.planets-choice .par-planet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 1em;
+}
+.planets-choice .par-planet img {
+  transform: scale(1);
+  transition: all 0.2s;
+}
+.planets-choice .par-planet img:hover {
+  transform: scale(1.3);
+  transition: all 0.2s;
+}
+.planets-choice .par-planet p {
+  color: black;
+  font-size: 2em;
+}
+
+@media screen and (max-width: 1200px) {
+  .planets-choice {
+    flex-direction: column;
+  }
+}
+.planets {
+  overflow: hidden;
+}
+.planets .fa {
+  margin-right: 0.5em;
+}
+.planets .planet {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+}
+.planets .planet .planet-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 3em;
+  text-align: justify;
+  width: 70%;
+  color: white;
+}
+.planets .planet .planet-text p {
+  width: 60%;
+}
+.planets .planet .planet-text .planet-name {
+  font-size: 4em;
+  margin: 0;
+}
+
+.blue {
+  background: radial-gradient(circle at right top, black, #3939f1);
+}
+
+.red {
+  background: radial-gradient(circle at right top, black, #f13955);
+}
+
+.light-blue {
+  background: radial-gradient(circle at right top, black, rgba(29, 139, 253, 0.8));
+}
+
+.red2 {
+  background: radial-gradient(circle at right top, black, rgba(246, 16, 16, 0.8));
+}
+
+.blue2 {
+  background: radial-gradient(circle at right top, black, #1e92ea);
+}
+
+@media screen and (max-width: 1100px) {
+  .planets .planet {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .planets .planet .planet-text {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .planets .planet .planet-text p {
+    width: 80%;
+  }
+}
+.mosaic {
+  margin-top: 5em;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: "hero aside-top" "hero aside-bottom";
+}
+.mosaic img {
+  margin-top: 1em;
+  width: 60%;
+}
+.mosaic .hero {
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5em;
+  background: url("/Images/BG3.jpg") no-repeat center;
+  background-size: cover;
+  grid-area: hero;
+}
+.mosaic .hero .hero-title {
+  font-size: 2.5em;
+}
+.mosaic .aside-top {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  grid-area: aside-top;
+}
+.mosaic .aside-bottom {
+  color: white;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #5138bd;
+  grid-area: aside-bottom;
+}
+
+@media screen and (max-width: 1000px) {
+  .mosaic {
+    display: block;
+  }
+}
+.cards {
+  margin-top: 2em;
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cards .card {
+  box-shadow: 4px 4px 30px black;
+  transition: all 0.3s;
+  color: white;
+  text-align: center;
+  margin: 1em 2em;
+  border-radius: 10px;
+  background: #69b3ef;
+}
+.cards .card:hover {
+  box-shadow: 0 0 0 black;
+  transition: all 0.2s;
+}
+.cards .card img {
+  padding: 1em;
+  height: 60%;
+  width: 60%;
+  margin-bottom: 1.5em;
+}
+.cards .card .card-text {
+  background: #5138bd;
+  padding: 1.5em;
+  border-radius: 0 0 10px 10px;
+}
+
+@media screen and (max-width: 1100px) {
+  .cards {
+    flex-direction: column;
+  }
+}
+.content {
+  padding: 2em 0;
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+}
+.content img {
+  width: 60%;
+  border-radius: 10px;
+}
+
+.carousel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.carousel .carousel-text {
+  text-align: center;
+  padding: 4em 6em;
+}
+.carousel .carousel-text img {
+  width: 25%;
+  margin: 2em 0;
+}
+
+.active {
+  animation-name: SlideLeft;
+  animation-duration: 2s;
+}
+
+.inactive {
+  animation-name: SlideLeft2;
+  animation-duration: 1s;
+}
+
+@keyframes SlideLeft {
+  from {
+    transform: translateX(500%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes SlideLeft2 {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-500%);
+  }
+}
+@media screen and (max-width: 1100px) {
+  .carousel {
+    flex-direction: column;
+  }
+}
+.simple-left-right {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.simple-left-right .left-panel {
+  padding: 2em;
+}
+.simple-left-right .left-panel img {
+  width: 40%;
+  transform: scale(1.35);
+}
+.simple-left-right .right-panel {
+  padding: 3em;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  height: 100vh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*# sourceMappingURL=style.css.map */
